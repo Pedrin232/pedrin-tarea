@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inicio de Sesión</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Agregando un background al fondo de la página */
+    body {
+      background-image: url("ingredientes-italianos-apetitosos-frescos-sabrosos-comida-fondo-oscuro-listo-cocinar-inicio-italiano-comida-saludable-concepto-cocina-viraje_1220-1820.avif");
+      background-size: cover;
+      background-position: center;
+    }     .fade-in {
+        animation: fadeInAnimation 1s ease-in;
+        animation-fill-mode: forwards;
+      }
+      
+      .fade-out {
+        animation: fadeOutAnimation 1s ease-out;
+        animation-fill-mode: forwards;
+      }    @keyframes fadeInAnimation {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+      @keyframes fadeOutAnimation {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">Tienda Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Productos</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="store" class="fade-out">
+    <h2>Bienvenido a la Tienda Online</h2>
+    <p>Explora nuestra amplia selección de productos.</p>
+  </section>
+  <section id="login" class="fade-in">
+    <div class="login-container">
+      <h2>Iniciar Sesión</h2>
+      <form id="login-form">
+        <input type="email" id="email-input" placeholder="Correo electrónico" required>
+        <input type="password" id="password-input" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

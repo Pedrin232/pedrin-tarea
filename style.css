@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: fadeInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  animation: slideInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInAnimation {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+main {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.8;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  vertical-align: top;
+  animation: fadeInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+.product img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  animation: scaleInAnimation 0.3s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scaleInAnimation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  animation: fadeInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+.stars {
+  color: #FFD700;
+  margin-right: 5px;
+}
+
+.avg-rating {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+#cart {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Opacidad baja */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: slideInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#total-price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  animation: fadeInAnimation 1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-primary {
+  background-color: #4CAF50;
+}
+
+.button-danger {
+  background-color: #F44336;
+}
+
+.button-primary:disabled,
+.button-danger:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 600px) {
+  .product img {
+    width: 100%;
+    height: auto;
+  }
+}
+

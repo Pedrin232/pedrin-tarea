@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tienda Virtual</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    /* Agregando un background al fondo de la página */
+    body {
+      background-image: url("cocina-comida-india-tipica-wallpaper-preview.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tienda Virtual</h1>
+  </header>
+  <section id="login">
+    <h2>Iniciar Sesión</h2>
+    <form id="login-form">
+      <input type="email" id="email-input" placeholder="Correo electrónico" required>
+      <input type="password" id="password-input" placeholder="Contraseña" required>
+      <button type="submit">Iniciar Sesión</button>
+    </form>
+  </section>
+  <main>
+    <section id="featured-products">
+      <h2>Productos Destacados</h2>
+
+      <div class="product">
+        <img src="product1.jpg" alt="Producto 1">
+        <h3>Producto 1</h3>
+        <p>Precio: $10.00</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+          <span class="avg-rating">5.0</span>
+        </div>
+        <button data-product-name="Producto 1" data-product-price="10.00" class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="product2.jpg" alt="Producto 2">
+        <h3>Producto 2</h3>
+        <p>Precio: $15.00</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span>
+          <span class="avg-rating">3.0</span>
+        </div>
+        <button data-product-name="Producto 2" data-product-price="15.00" class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="product3.jpg" alt="Producto 3">
+        <h3>Producto 3</h3>
+        <p>Precio: $20.00</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span>
+          <span class="avg-rating">2.0</span>
+        </div>
+        <button data-product-name="Producto 3" data-product-price="20.00" class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+
+      <div class="product">
+        <img src="product4.jpg" alt="Producto 4">
+        <h3>Producto 4</h3>
+        <p>Precio: $25.00</p>
+        <div class="rating">
+          <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+          <span class="avg-rating">4.0</span>
+        </div>
+        <button data-product-name="Producto 4" data-product-price="25.00" class="add-to-cart-btn">Agregar al carrito</button>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Carrito de Compras</h2>
+      <ul id="cart-items"></ul>
+      <p id="total-price">Total: $0.00</p>
+      <a href="payment.html"><button id="checkout-btn" disabled>Finalizar Compra</button></a>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
